@@ -1,0 +1,77 @@
+/* footer.css */
+
+/* Styles pour mobile */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    background-color: #FFD700;
+    color: #2e2e2e;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.facebook-embed iframe {
+    width: 100%;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Styles pour desktop */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-column {
+        width: 30%;
+        margin-bottom: 0;
+        text-align: left;
+    }
+}

@@ -1,0 +1,170 @@
+/* main.css */
+
+/* Styles généraux pour mobile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #2e2e2e;
+    color: #fff;
+    font-family: Lato, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, sans-serif;
+    color: #FFD700;
+}
+
+/* Styles pour la page d'accueil (mobile) */
+.main-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container-homepage {
+    margin: 20px;
+}
+
+.logo-box-homepage,
+.logo-box-homepage2,
+.product-box-homepage {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-box-homepage {
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-box-homepage2 {
+    background-image: url('../images/btcaccueil.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-box-homepage::before,
+.logo-box-homepage2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.text-overlay-homepage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    width: 90%;
+}
+
+.overlay-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay-text {
+    font-size: 1rem;
+    color: #FFD700;
+}
+
+.btn-voir-articles {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #FFD700;
+    color: #2e2e2e;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-voir-articles:hover {
+    background-color: #ffcc00;
+}
+/* main.css */
+
+.flash-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+}
+
+.flash-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+/* Styles pour les écrans de taille intermédiaire */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .btn-voir-articles {
+        font-size: 0.95rem;
+        padding: 9px 18px;
+    }
+
+    .logo-box-homepage,
+    .logo-box-homepage2 {
+        background-size: 150%;
+    }
+}
+
+/* Styles pour les écrans plus grands (tablettes et ordinateurs) */
+@media (min-width: 1025px) {
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .container-homepage {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .logo-box-homepage,
+    .logo-box-homepage2,
+    .product-box-homepage {
+        width: 48%;
+        margin-bottom: 0;
+    }
+
+    .logo-box-homepage,
+    .logo-box-homepage2 {
+        background-size: 200%;
+    }
+
+    .text-overlay-homepage {
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

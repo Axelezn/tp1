@@ -1,0 +1,28 @@
+{# templates/partials/header.html.twig #}
+<header>
+    <div class="header-content">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo" class="header-logo">
+        <h1>CoinGoodies</h1>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="{{ path('homepage') }}">Accueil</a></li>
+                <li><a href="google.com">À propos</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+</script>
