@@ -1,4 +1,4 @@
-{# templates/product/list.html.twig #}
+{# filepath: /home/axel/tp1/templates/product/list.html.twig #}
 
 {% extends 'base.html.twig' %}
 
@@ -10,10 +10,11 @@
     <div class="product-list">
         {% for product in products %}
             <div class="product-card">
-                <img src="{{ asset('uploads/products/' ~ product.image) }}" alt="{{ product.name }}" class="product-image">
-                <h2>{{ product.name }}</h2>
-                <p>Prix : {{ product.price }} €</p>
-                <a href="{{ path('product_show', {'id': product.id}) }}" class="btn-product">En savoir plus</a>
+                <a href="{{ path('product_show', {'id': product.id}) }}">
+                    <img src="{{ asset('images/products/' ~ product.image) }}" alt="{{ product.name }}" class="product-image">
+                    <h2>{{ product.name }}</h2>
+                    <p>Prix : {{ product.price }} €</p><p>EUROS</P<
+                </a>
             </div>
         {% endfor %}
     </div>

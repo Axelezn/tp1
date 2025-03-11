@@ -1,4 +1,4 @@
-{# templates/product/show.html.twig #}
+{# filepath: templates/product/show.html.twig #}
 
 {% extends 'base.html.twig' %}
 
@@ -6,7 +6,7 @@
 
 {% block body %}
     <div class="product-detail">
-        <img src="{{ asset('uploads/products/' ~ product.image) }}" alt="{{ product.name }}" class="product-image">
+        <img src="{{ asset('images/products/' ~ product.image) }}" alt="{{ product.name }}" class="product-image">
         <h1>{{ product.name }}</h1>
         <p>Prix : {{ product.price }} €</p>
         <p>{{ product.description }}</p>
