@@ -104,8 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-voir-articles:hover {
     background-color: #ffcc00;
 }
-/* main.css */
-
+/*Styles pour pop-up*/
 .flash-success {
     background-color: #d4edda;
     color: #155724;
@@ -122,6 +121,42 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
     border: 1px solid #f5c6cb;
     border-radius: 4px;
+}
+/*Style pour les produits*/
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.btn-product {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #2e2e2e;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-detail {
+    text-align: center;
+    padding: 20px;
 }
 /* Styles pour les écrans de taille intermédiaire */
 @media (min-width: 600px) and (max-width: 1024px) {

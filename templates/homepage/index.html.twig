@@ -21,4 +21,15 @@
         </div>
     </div>
 </div>
+<h2>Nos coups de coeur actuels !</h2>
+<div class="product-list">
+    {% for product in products %}
+    <div class="product-card">
+        <img src="{{ asset('images/products/' ~ product.image)}}" alt="{{ product.name }}" class="product-image">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price }}</p>
+        <a href="{{ path('product_show', {'id': product.id}) }}" class="btn-product">En savoir plus</a>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

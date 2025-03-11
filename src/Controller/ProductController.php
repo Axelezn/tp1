@@ -30,7 +30,6 @@ class ProductController extends AbstractController
 
     public function getFeaturedProducts(EntityManagerInterface $entityManager): array
     {
-        // Récupérer 4 produits au hasard
         $products = $entityManager->getRepository(Product::class)->findAll();
         shuffle($products);
         return array_slice($products, 0, 4);
