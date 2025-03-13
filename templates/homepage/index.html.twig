@@ -27,7 +27,7 @@
     <div class="product-card">
         <img src="{{ asset('images/products/' ~ product.image)}}" alt="{{ product.name }}" class="product-image">
         <h3>{{ product.name }}</h3>
-        <p>{{ product.price }}</p>
+        <p class="product-price">{{ product.price }}€</p>
         <a href="{{ path('product_show', {'id': product.id}) }}" class="btn-product">En savoir plus</a>
     </div>
     {% endfor %}

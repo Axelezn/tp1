@@ -9,27 +9,27 @@ header {
 }
 
 .header-content {
-    display: flex; /* Utiliser flexbox pour aligner les éléments */
-    align-items: center; /* Centrer verticalement les éléments */
-    justify-content: space-between; /* Espacer les éléments */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .header-logo {
-    width: 70px; /* Ajustez la largeur de l'image selon vos besoins */
-    height: auto; /* Conserver le ratio de l'image */
-    margin-right: 15px; /* Espacement entre l'image et le texte */
+    width: 70px; 
+    height: auto;
+    margin-right: 15px; 
 }
 
 .header-content > h1 {
-    font-size: 2.5vw; /* Taille de police responsive basée sur la largeur de la fenêtre */
-    margin: 0; /* Supprimer la marge par défaut */
-    padding: 0; /* Supprimer le padding par défaut */
+    font-size: 2.5vw; 
+    margin: 0;
+    padding: 0; 
     font-family: Montserrat;
     color :#FFD700;
 }
 
 nav {
-    margin-left: auto; /* Pousser la navigation à droite */
+    margin-left: auto; 
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFD700; /* Couleur des liens */
+    color: #FFD700; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s; 
@@ -58,18 +58,18 @@ nav ul li a:hover {
 /* Styles pour le menu burger */
 .menu-toggle {
     display: none; /* Masquer le menu burger par défaut */
-    flex-direction: column; /* Alignement vertical */
-    justify-content: center; /* Centrer les barres verticalement */
-    cursor: pointer; /* Changer le curseur au survol */
-    margin-left: auto; /* Pousser le menu burger à droite */
-    height: 40px; /* Hauteur pour centrer par rapport au logo et au titre */
+    flex-direction: column; 
+    justify-content: center; 
+    cursor: pointer;
+    margin-left: auto; 
+    height: 40px; 
 }
 
 .menu-toggle .bar {
-    height: 3px; /* Épaisseur de la barre */
-    width: 25px; /* Largeur de la barre */
-    background-color: #FFD700; /* Couleur de la barre (doré) */
-    margin: 3px 0; /* Espacement entre les barres */
+    height: 3px;
+    width: 25px; 
+    background-color: #FFD700;
+    margin: 3px 0; 
 }
 
 /* Media Queries pour ajuster la taille de la police sur les petits écrans */
@@ -85,28 +85,28 @@ nav ul li a:hover {
     .menu-toggle {
         display: flex; /* Afficher le menu burger sur les petits écrans */
         position: absolute; /* Positionner le menu burger */
-        right: 20px; /* Ajuster la distance du bord droit */
-        top: 33px; /* Ajuster la distance du bord supérieur */
-        align-items: center; /* Centrer verticalement le menu burger */
+        right: 20px; 
+        top: 33px; 
+        align-items: center; 
     }
 
     nav ul {
         flex-direction: column; 
         align-items: center; 
-        display: none; /* Masquer le menu par défaut */
-        width: 100%; /* Prendre toute la largeur */
-        background-color: #2E2E2E; /* Couleur de fond du menu */
-        position: absolute; /* Positionner le menu */
-        top: 70px; /* Ajuster selon la hauteur de l'en-tête */
-        left: 0; /* Alignement à gauche */
-        z-index: 1; /* Placer le menu au-dessus des autres éléments */
+        display: none; 
+        width: 100%; 
+        background-color: #2E2E2E; 
+        position: absolute;
+        top: 70px; 
+        left: 0; 
+        z-index: 1; 
     }
 
     nav ul.active {
-        display: flex; /* Afficher le menu lorsque la classe active est ajoutée */
+        display: flex; 
     }
 
     nav ul li {
-        margin: 10px 0; /* Espacement vertical entre les éléments du menu */
+        margin: 10px 0; 
     }
 }
